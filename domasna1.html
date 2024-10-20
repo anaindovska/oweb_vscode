@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+    </head>
+    <body style="align-items: center; display: flex; justify-content: center;">
+        <div style="padding: 3px 50px ;text-align: center; border-width: 2px; border-style: solid; border-color: black;  display: inline-block;">
+        <form>
+            <h1><b>Order pizza!</b>
+            </h1>
+            <label for="golemina" style="font-size: 1.17em; font-weight: bolder">Select the pizza size:</label><br>
+                <div id="golemina">
+            <input type="radio" id="big" name="size">
+            <label for="big">Big</label><br>
+            <input type="radio" id="medium" name="size">
+            <label for="medium">Medium</label><br>
+            <input type="radio" id="small" name="size">
+            <label for="small">Small</label><br>
+            </div><br>
+
+
+            <label for="crust" style="font-size: 1.17em; font-weight: bolder">Select the crust type:</label><br>
+            <select id="crust" name="crust">
+                <option value="deep dish">Deep Dish</option>
+                <option value="neapolitan">Neapolitan</option>
+                <option value="thin">Thin</option>
+                <option value="sicilian">Sicilian</option>
+            </select><br><br>
+
+
+            <label for="box" style="font-size: 1.17em; font-weight: bolder">Select the filler:</label><br>
+            <div id="box">
+            <input type="checkbox" id="sausages" name="sausages">
+            <label for="sausages">Sausages</label><br>
+            <input type="checkbox" id="pepper" name="pepper">
+            <label for="pepper">Pepper</label><br>
+            <input type="checkbox" id="mushrooms" name="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+           </div> <br>
+
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name"><br>
+            <label for="name"><b>Phone:</b></label>
+            <input type="text" id="phone" name="phone"><br>
+            <textarea rows="5" cols="50" id="message" name="message" placeholder="Message:"></textarea>
+           
+            <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    </body>
+</html>
+           
