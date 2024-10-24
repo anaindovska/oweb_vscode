@@ -1,13 +1,13 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="domasna1styles.css">
     </head>
-    <body style="align-items: center; display: flex; justify-content: center;">
-        <div style="padding: 3px 50px ;text-align: center; border-width: 2px; border-style: solid; border-color: black;  display: inline-block;">
+    <body>
+        <div id="formm">
         <form>
             <h1><b>Order pizza!</b>
             </h1>
-            <label for="golemina" style="font-size: 1.17em; font-weight: bolder">Select the pizza size:</label><br>
+            <label id="labela" for="golemina">Select the pizza size:</label><br>
                 <div id="golemina">
             <input type="radio" id="big" name="size">
             <label for="big">Big</label><br>
@@ -18,7 +18,7 @@
             </div><br>
 
 
-            <label for="crust" style="font-size: 1.17em; font-weight: bolder">Select the crust type:</label><br>
+            <label for="crust" id="labela">Select the crust type:</label><br>
             <select id="crust" name="crust">
                 <option value="deep dish">Deep Dish</option>
                 <option value="neapolitan">Neapolitan</option>
@@ -27,7 +27,7 @@
             </select><br><br>
 
 
-            <label for="box" style="font-size: 1.17em; font-weight: bolder">Select the filler:</label><br>
+            <label for="box" id="labela">Select the filler:</label><br>
             <div id="box">
             <input type="checkbox" id="sausages" name="sausages">
             <label for="sausages">Sausages</label><br>

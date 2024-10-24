@@ -1,0 +1,32 @@
+
+body{
+    background-image: url("pozadina1.avif");
+    align-items: center; 
+    display: flex; 
+    justify-content: center;
+}
+#formm{
+    padding: 3px 50px ;
+    text-align: center; 
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: black;  
+    display: inline-block;
+    background-color: rgb(196, 195, 196);
+}
+#labela{
+    font-size: 1.17em; 
+    font-weight: bolder;
+}
+#message{
+    background-color: rgb(236, 215, 236);
+}
+#name{
+    background-color: rgb(236, 215, 236);
+}
+#phone{
+    background-color: rgb(236, 215, 236);
+}
+select{
+    background-color: rgb(236, 215, 236);
+}
