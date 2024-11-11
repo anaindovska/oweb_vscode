@@ -1,0 +1,65 @@
+
+.objavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    flex-direction: column; 
+    background-color: #f0f0f0;
+}
+
+.post {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+}
+
+.slika {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+button.like-button, button.comment-button {
+    background-color: #bdbdbd;
+    color: black;
+    border: none;
+    border-color: #9c9c9c;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.comment-button {
+    background-color: #bdbdbd;
+}
+
+.comment-section {
+    width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.comment-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+input.comment-input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}

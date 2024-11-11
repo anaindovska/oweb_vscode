@@ -1,0 +1,69 @@
+.review {
+
+    background-color: #e9e9e9;
+    padding: 20px;
+    width: 500px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #f0f0f0;
+  }
+.formm{
+    display: flex;
+    flex-direction: column;
+}
+
+.review h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tekst {
+    display: block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.lab{
+    display: inline-flex;
+    margin-right: 5px;
+
+}
+
+.review .checkbox-group, 
+.review .radio-group {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 15px;
+}
+
+
+
+.review input, 
+.review textarea, 
+.review select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.review textarea {
+    height: 120px;
+}
+
+.submit-button {
+    background-color: #f1f1f1;
+    border: 1px solid #9e9e9e;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+

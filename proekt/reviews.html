@@ -1,0 +1,77 @@
+<html>
+  <head> 
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="reviews.css">
+  </head>
+  <header>
+    <div style="flex: 1;"></div>
+    <img src="logo.png" id="logo" alt="logo">
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown"><a href="#">Cars</a>
+        <ul class="dropdown-menu">
+            <li><a href="new.html">New</a></li>
+            <li><a href="used.html">Used</a></li>
+        </ul></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html"  class="active">Reviews</a></li>
+    </ul>
+
+
+  </header>
+  <body>
+    <div class="review">
+        <h2>Leave a Review</h2>
+        <form id="formm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
+            
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"required><br>
+            
+            <label for="how" class="tekst">How did you find out about our website?</label><br>
+                <label for="instagram" class="lab" id="how">Instagram</label>
+                <input type="checkbox" id="instagram"><br>
+
+                <label for="facebook" class="lab">Facebook</label>
+                <input type="checkbox" id="facebook"><br>
+                
+                <label for="tiktok" class="lab">TikTok</label>
+                <input type="checkbox" id="tiktok"><br>
+
+                <label for="friend" class="lab">From a Friend</label>
+                <input type="checkbox" id="friend"><br>
+
+                <label for="other" class="lab">Other:</label>
+                <input type="checkbox" id="other"><input type="text"><br>
+            
+            
+            <label for="helpful" class="tekst">Was this website helpful?</label><br>
+                <div id="helpful">
+                <label for="yes" class="lab">Yes</label>
+                <input type="radio" id="yes" name="help"><br>
+                <label for="no" class="lab">No</label>
+                <input type="radio" id="no" name="help">
+                </div>
+            
+            <label for="messageBox" class="tekst">Additional Feedback or Message:</label><br>
+            <textarea id="messageBox" name="messageBox" placeholder=""></textarea><br>
+            
+            <label for="rating">Rate our website:</label><br>
+            <select id="rating" name="rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select><br>
+    
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+
+  </body>
+  <footer><p>&copy; 2024 Wheels&Deals. All rights reserved.</p></footer>
+</html>

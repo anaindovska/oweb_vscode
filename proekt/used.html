@@ -1,0 +1,186 @@
+<html>
+  <head> 
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="used_new.css">
+  </head>
+  <header>
+    <div style="flex: 1;"></div>
+    <img src="logo.png" id="logo" alt="logo">
+    <ul class="navbar">
+      <li><a  href="home.html">Home</a></li>
+      <li class="dropdown"><a href="#"  class="active">Cars</a>
+        <ul class="dropdown-menu">
+            <li><a href="new.html">New</a></li>
+            <li><a href="used.html"  class="active">Used</a></li>
+        </ul></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+
+
+  </header>
+  <body>
+    <div class="row">
+        <div class="col levo">
+            <button class="btn levo" onclick="scrollLevo(0)">&#10094;
+
+            </button>
+            <div class="slikislider" id="slider1">
+            <img src="used\11\1.jpg" alt="1">
+            <img src="used\11\2.jpg" alt="2">
+            <img src="used\11\3.jpg" alt="3">
+            <img src="used\11\4.jpg" alt="4">
+            <img src="used\11\5.jpg" alt="5">
+            </div>
+            <button class="btn desno" onclick="scrollDesno(0)">&#10095;
+            </button>
+            
+        </div>
+
+        <div class="col sredina">
+            <h3 class="kola">Nissan Gt-r</h3>
+            <h2 class="kolaa">PRESTIGE 3.8 2dr</h2>
+            <p class="spec">
+                40,000 miles<br>2018<br>Automatic<br>Petrol<br>
+            </p>
+            <p class="cena">£68,000</p><br>
+            <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202303215458098?sort=relevance&twcs=true&advertising-location=at_cars&make=Nissan&model=GT-R&page=1&postcode=NW9%207RH&fromsra" target="_blank">
+                press here</a></p>
+            
+        </div>
+        <div class="col desno">
+            <form class="test vozenje">
+                <h2 class="zakazi">Schedule a test drive!</h2>
+                <label for="name">Enter your name:</label>
+                <input type="text" placeholder="Name" id="name1" required>
+                <input type="text" placeholder="Surname" id="surname1" required>
+
+                <label for="tel">Enter your phone number:</label>
+                <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+                <label for="data">Select a date</label>
+                <input type="date" name="data" required>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="row">
+    <div class="col levo">
+        <button class="btn levo" onclick="scrollLevo(1)">&#10094;
+
+        </button>
+        <div class="slikislider" id="slider2">
+        <img src="used\12\1.jpg" alt="1">
+        <img src="used\12\2.jpg" alt="2">
+        <img src="used\12\3.jpg" alt="3">
+        <img src="used\12\4.jpg" alt="4">
+        <img src="used\12\5.jpg" alt="5">
+        </div>
+        <button class="btn desno" onclick="scrollDesno(1)">&#10095;
+        </button>
+        
+    </div><script src="used.js"></script>
+
+    <div class="col sredina">
+        <h3 class="kola">Ford Fiesta</h3>
+        <h2 class="kolaa">1.0T EcoBoost Titanium Hatchback 3dr Petrol Manual Euro 5 (s/s) (100 ps)</h2>
+        <p class="spec">
+            66,413 miles<br>2013 (13 reg)<br>Manual<br>Petrol<br>
+        </p>
+        <p class="cena">£3,900</p><br>
+        <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202410235533122?sort=relevance&advertising-location=at_cars&make=Ford&model=Fiesta&page=3&postcode=NW9%207RH&price-to=5000&fromsra" target="_blank">
+            press here</a></p>
+        
+    </div>
+    <div class="col desno">
+        <form class="test vozenje">
+            <h2 class="zakazi">Schedule a test drive!</h2>
+            <label for="name">Enter your name:</label>
+            <input type="text" placeholder="Name" id="name2" required>
+            <input type="text" placeholder="Surname" id="surname2" required>
+
+            <label for="tel">Enter your phone number:</label>
+            <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+            <label for="data">Select a date</label>
+            <input type="date" name="data" required>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+</div>
+
+
+
+<hr>
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col levo">
+        <button class="btn levo" onclick="scrollLevo(2)">&#10094;
+
+        </button>
+        <div class="slikislider" id="slider3">
+        <img src="used\13\1.jpg" alt="1">
+        <img src="used\13\2.jpg" alt="2">
+        <img src="used\13\3.jpg" alt="3">
+        <img src="used\13\4.jpg" alt="4">
+        <img src="used\13\5.jpg" alt="5">
+        </div>
+        <button class="btn desno" onclick="scrollDesno(2)">&#10095;
+        </button>
+        
+    </div>
+
+    <div class="col sredina">
+        <h3 class="kola">Mazda MX-5</h3>
+        <h2 class="kolaa">1.8 Nevada Convertible 2dr Petrol Manual (188 g/km, 139 bhp)        </h2>
+        <p class="spec">
+            65,000 miles<br>2003 (03 reg)<br>Manual<br>Petrol<br>
+        </p>
+        <p class="cena">£4,500</p><br>
+        <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202410315805996?sort=relevance&advertising-location=at_cars&make=Mazda&model=MX-5&page=1&postcode=NW9%207RH&price-to=5000&fromsra" target="_blank">
+            press here</a></p>
+        
+    </div>
+    <div class="col desno">
+        <form class="test vozenje">
+            <h2 class="zakazi">Schedule a test drive!</h2>
+            <label for="name">Enter your name:</label>
+            <input type="text" placeholder="Name" id="name3" required>
+            <input type="text" placeholder="Surname" id="surname3" required>
+
+            <label for="tel">Enter your phone number:</label>
+            <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+            <label for="data">Select a date</label>
+            <input type="date" name="data" required>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+</div>
+<hr>
+<script src="used.js"></script>
+  </body>
+  <footer><p>&copy; 2024 Wheels&Deals. All rights reserved.</p></footer>
+</html>

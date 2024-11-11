@@ -1,0 +1,191 @@
+<html>
+  <head> 
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="used_new.css">
+  </head>
+  <header>
+    <div style="flex: 1;"></div>
+    <img src="logo.png" id="logo" alt="logo">
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown"><a href="#"  class="active">Cars</a>
+        <ul class="dropdown-menu">
+            <li><a href="new.html"  class="active">New</a></li>
+            <li><a href="used.html">Used</a></li>
+        </ul></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+
+
+  </header>
+  <body>
+
+    <div class="row">
+      <div class="col levo">
+          <button class="btn levo" onclick="scrollLevo(0)">&#10094;
+
+          </button>
+          <div class="slikislider" id="slider1">
+          <img src="new\21\1.jpg" alt="1">
+          <img src="new\21\2.jpg" alt="2">
+          <img src="new\21\3.jpg" alt="3">
+          <img src="new\21\4.jpg" alt="4">
+          <img src="new\21\5.jpg" alt="5">
+          </div>
+          <button class="btn desno" onclick="scrollDesno(0)">&#10095;
+          </button>
+          
+      </div>
+
+      <div class="col sredina">
+          <h3 class="kola">Porsche 911</h3>
+          <h2 class="kolaa">2dr PDK [4 Seat] 3.0</h2>
+          <p class="spec">
+            10 miles<br>Automatic<br>Petrol<br>
+          </p>
+          <p class="cena">£130,777</p><br>
+          <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202411025877932?sort=relevance&advertising-location=at_cars&make=Porsche&model=911&postcode=NW9%207RH&year-from=new&year-to=new&fromsra" target="_blank">
+              press here</a></p>
+          
+      </div>
+      <div class="col desno">
+          <form class="test vozenje">
+              <h2 class="zakazi">Schedule a test drive!</h2>
+              <label for="name">Enter your name:</label>
+              <input type="text" placeholder="Name" id="name1" required>
+              <input type="text" placeholder="Surname" id="surname1" required>
+
+              <label for="tel">Enter your phone number:</label>
+              <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+              <label for="data">Select a date</label>
+              <input type="date" name="data" required>
+
+              <button type="submit">Send</button>
+          </form>
+      </div>
+      
+  </div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="row">
+  <div class="col levo">
+      <button class="btn levo" onclick="scrollLevo(1)">&#10094;
+
+      </button>
+      <div class="slikislider" id="slider2">
+      <img src="new\22\1.jpg" alt="1">
+      <img src="new\22\2.jpg" alt="2">
+      <img src="new\22\3.jpg" alt="3">
+      <img src="new\22\4.jpg" alt="4">
+      <img src="new\22\5.jpg" alt="5">
+      </div>
+      <button class="btn desno" onclick="scrollDesno(1)">&#10095;
+      </button>
+      
+  </div><script src="used.js"></script>
+
+  <div class="col sredina">
+      <h3 class="kola">Audi S4</h3>
+      <h2 class="kolaa">3.0 TDI V6 Black Edition Tiptronic quattro Euro 6 (s/s) 4dr</h2>
+      <p class="spec">
+        25 miles<br>Automatic<br>Diesel<br>
+      </p>
+      <p class="cena">£54,980</p><br>
+      <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202410285673959?sort=relevance&advertising-location=at_cars&make=Audi&model=S4&postcode=NW9%207RH&year-from=new&year-to=new&fromsra" target="_blank">
+          press here</a></p>
+      
+  </div>
+  <div class="col desno">
+      <form class="test vozenje">
+          <h2 class="zakazi">Schedule a test drive!</h2>
+          <label for="name">Enter your name:</label>
+          <input type="text" placeholder="Name" id="name2" required>
+          <input type="text" placeholder="Surname" id="surname2" required>
+
+          <label for="tel">Enter your phone number:</label>
+          <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+          <label for="data">Select a date</label>
+          <input type="date" name="data" required>
+
+          <button type="submit">Send</button>
+      </form>
+  </div>
+  
+</div>
+
+
+
+<hr>
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col levo">
+      <button class="btn levo" onclick="scrollLevo(2)">&#10094;
+
+      </button>
+      <div class="slikislider" id="slider3">
+      <img src="new\23\1.jpg" alt="1">
+      <img src="new\23\2.jpg" alt="2">
+      <img src="new\23\3.jpg" alt="3">
+      <img src="new\23\4.jpg" alt="4">
+      <img src="new\23\5.jpg" alt="5">
+      </div>
+      <button class="btn desno" onclick="scrollDesno(2)">&#10095;
+      </button>
+      
+  </div>
+
+  <div class="col sredina">
+      <h3 class="kola">Lexus RX</h3>
+      <h2 class="kolaa">2.5 350h Prem Plus E-CVT 4WD Euro 6 (s/s) 5dr</h2>
+      <p class="spec">
+        10 miles<br>Automatic<br>Petrol Hybrid
+        <br>
+      </p>
+      <p class="cena">£69,220</p><br>
+      <p class="info">For more information <a href="https://www.autotrader.co.uk/car-details/202409254435797?sort=relevance&advertising-location=at_cars&make=Lexus&model=RX&postcode=NW9%207RH&year-from=new&year-to=new&fromsra" target="_blank">
+          press here</a></p>
+      
+  </div>
+  <div class="col desno">
+      <form class="test vozenje">
+          <h2 class="zakazi">Schedule a test drive!</h2>
+          <label for="name">Enter your name:</label>
+          <input type="text" placeholder="Name" id="name3" required>
+          <input type="text" placeholder="Surname" id="surname3" required>
+
+          <label for="tel">Enter your phone number:</label>
+          <input type="tel" placeholder="07#-###-###" pattern="07[0-9]{1}[0-9]{3}[0-9]{3}" id="tel" required>
+
+          <label for="data">Select a date</label>
+          <input type="date" name="data" required>
+
+          <button type="submit">Send</button>
+      </form>
+  </div>
+  
+</div>
+<hr>
+<script src="used.js"></script>
+
+
+
+  </body>
+  <footer><p>&copy; 2024 Wheels&Deals. All rights reserved.</p></footer>
+</html>

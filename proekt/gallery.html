@@ -1,0 +1,88 @@
+<html>
+  <head> 
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  <header>
+    <div style="flex: 1;"></div>
+    <img src="logo.png" id="logo" alt="logo">
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown"><a href="#">Cars</a>
+        <ul class="dropdown-menu">
+            <li><a href="new.html">New</a></li>
+            <li><a href="used.html">Used</a></li>
+        </ul></li>
+      <li><a href="gallery.html"  class="active">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+
+
+  </header>
+  <body>
+    <div class="objavi">
+
+    <div class="post" id="post1">
+        <img src="used/11/1.jpg" class="slika" alt="Car image">
+        <p><span id="like-count-1">0</span> likes</p>
+        <button class="like-button" data-post-id="1">Like</button>
+    
+        <div class="comment-section" id="commentSection-1">
+           
+        </div>
+        <input type="text" class="comment-input" id="commentInput-1" placeholder="Add a comment">
+        <button class="comment-button" onclick="addComment(1)">Comment</button>
+    </div>
+    
+    <hr>
+    
+    <div class="post" id="post2">
+        <img src="used/12/1.jpg" class="slika" alt="Car image">
+        <p><span id="like-count-2">0</span> likes</p>
+        <button class="like-button" data-post-id="2">Like</button>
+    
+        <div class="comment-section" id="commentSection-2">
+           
+        </div>
+        <input type="text" class="comment-input" id="commentInput-2" placeholder="Add a comment">
+        <button class="comment-button" onclick="addComment(2)">Comment</button>
+    </div>
+    
+    <hr>
+    
+    <div class="post" id="post3">
+        <img src="used/13/1.jpg" class="slika" alt="Car image">
+        <p><span id="like-count-3">0</span> likes</p>
+        <button class="like-button" data-post-id="3">Like</button>
+    
+        <div class="comment-section" id="commentSection-3">
+            
+        </div>
+        <input type="text" class="comment-input" id="commentInput-3" placeholder="Add a comment">
+        <button class="comment-button" onclick="addComment(3)">Comment</button>
+    </div>
+    
+    <hr>
+    
+    <div class="post" id="post4">
+        <img src="new/21/1.jpg" class="slika" alt="Car image">
+        <p><span id="like-count-4">0</span> likes</p>
+        <button class="like-button" data-post-id="4">Like</button>
+    
+        <div class="comment-section" id="commentSection-4">
+            
+        </div>
+        <input type="text" class="comment-input" id="commentInput-4" placeholder="Add a comment">
+        <button class="comment-button" onclick="addComment(4)">Comment</button>
+    </div>
+
+
+
+
+</div>
+
+    <script src="gallery.js"></script>
+  </body>
+  <footer><p>&copy; 2024 Wheels&Deals. All rights reserved.</p></footer>
+</html>
