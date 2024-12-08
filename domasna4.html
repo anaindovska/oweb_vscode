@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            th, td{
+                border: 1px solid black;
+                width: 150px;
+            }
+            .search{
+                width: 150px;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <table>
+            <input class="search" id="ime" type="text">
+            <input class="search" id="prezime" type="text">
+            <input class="search" id="mejl" type="text">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>  
+            
+            <tbody id="tabela">
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@mail.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@greatstuff.com</td>
+                    </tr>
+                    <tr>
+                      <td>Anja</td>
+                      <td>Ravendale</td>
+                      <td>a_r@test.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>j@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Doe</td>
+                        <td>maryy@mail.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Ravendale</td>
+                        <td>jul@greatstuff.com</td>
+                      </tr>
+                      <tr>
+                        <td>Anja</td>
+                        <td>Ravendale</td>
+                        <td>anja@test.com</td>
+                      </tr>
+            </tbody>
+        </table>
+
+        <script>
+            $(document).ready(function(){
+
+                $("#ime").on("keyup", function(){
+                    const i=$(this).val().toLowerCase();
+                    $("#tabela tr").filter(function (){
+                        $(this).toggle($(this).children("td:nth-child(1)").text().toLowerCase().indexOf(i) > -1);
+                    });
+                });
+
+                $("#prezime").on("keyup", function(){
+                    const p=$(this).val().toLowerCase();
+                    $("#tabela tr").filter(function (){
+                        $(this).toggle($(this).children("td:nth-child(2)").text().toLowerCase().indexOf(p) > -1);
+                    });
+                });
+
+
+                $("#mejl").on("keyup", function(){
+                    const m=$(this).val().toLowerCase();
+                    $("#tabela tr").filter(function (){
+                        $(this).toggle($(this).children("td:nth-child(3)").text().toLowerCase().indexOf(m) > -1);
+                    });
+                });
+
+            });
+        </script>
+    </body>
+</html>
